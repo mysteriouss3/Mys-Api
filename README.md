@@ -29,7 +29,24 @@ API'ye erişim için yetkilendirme gerekmemektedir (default).
 
 API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örnekler:
 
-### Ana Sayfa
+###Node.js İçin Bazı Örnekler
 
-```http
-GET /
+```bash
+
+        const apiKey = 'test'; // API anahtarınızı buraya ekleyin
+        const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
+        // Axios ile GET isteği gönderme
+        const getData = await axios.get(apiUrl, {
+            headers: {
+                'x-api-key': apiKey,
+            },
+        }).catch((error) => { console.error('Hata:', error)});
+
+
+        console.log("Istek Başarılı!",getData.data)
+
+        const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n");
+
+        console.log(OtherName)```
+
+### Ana Sayfa
