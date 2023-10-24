@@ -25,13 +25,23 @@ API'ye erişim için yetkilendirme gerekmemektedir (default).
 - `GET /namaz/{sehir}/{ilce}` - Namaz Vakitleri
 - `GET /nsfw` - NSFW İçerik
 
+##Dökümantasyon
+
+- `http://77.90.131.131:10000/api-docs/` - Api Dökümantasyonu
+
+
+##Api Key ( Anahtar )
+
+- `test`
+
 ## Kullanım
 
 API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örnekler:
 
-###Node.js İçin Bazı Örnekler
+###Node.js için bazı örnekler
 
 ```bash
+        const axios = require('axios'); // axios kurmak için cmd penceresine npm install axios yazmanız yeterlidir 
 
         const apiKey = 'test'; // API anahtarınızı buraya ekleyin
         const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
@@ -47,6 +57,5 @@ API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örn
 
         const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n");
 
-        console.log(OtherName)```
-
-### Ana Sayfa
+        console.log(OtherName)
+```
