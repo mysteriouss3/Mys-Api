@@ -30,7 +30,7 @@ API'ye erişim için yetkilendirme gerekmemektedir (Api-Key).
 - `http://77.90.131.131:10000/api-docs/` - Api Dökümantasyonu
 
 
-##Api Key ( Anahtar )
+## Api Key ( Anahtar )
 
 - `test` - Api Anahtarınızdır
 
@@ -41,32 +41,32 @@ API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örn
 ### Node.js için api örnek kullanım
 
 ```bash
-const axios = require('axios'); // axios kurmak için cmd penceresine npm install axios yazmanız yeterlidir 
+const axios = require('axios') // axios kurmak için cmd penceresine npm install axios yazmanız yeterlidir 
 
-const apiKey = 'test'; // API anahtarınızı buraya ekleyin
-const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
+const apiKey = 'test' // API anahtarınızı buraya ekleyin
+const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}` // İstek atılacak API URL'sini belirtin
 // Axios ile GET isteği gönderme
 const getData = await axios.get(apiUrl, {
     headers: {
         'x-api-key': apiKey,
     },
-}).catch((error) => { console.error('Hata:', error)});
+}).catch((error) => { console.error('Hata:', error)})
 
 
 console.log("Istek Başarılı!",getData.data)
 
-const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n");
+const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n")
 
 console.log(OtherName)
 ```
 
 ## Discord Kullanıcısının Api Ile Çekilen Bilgileri ( Örnek )
 
-- 1. Resim
+-  1 . Resim
 
 ![Screenshot_1](https://github.com/mysteriouss3/Mys-Api/assets/142053394/76141f14-6fe8-4b7b-a91a-7103d3cbac30)
 
-- 2. Resim
+-  2 . Resim
 
 ![Screenshot_2](https://github.com/mysteriouss3/Mys-Api/assets/142053394/19ba8a34-515b-41ab-a8e6-26f1c579e90a)
 
