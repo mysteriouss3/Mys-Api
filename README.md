@@ -38,29 +38,42 @@ API'ye erişim için yetkilendirme gerekmemektedir (Api-Key).
 
 API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örnekler:
 
-### Node.js için api örnek kullanım
+## Veri Çekme Örneği
 
-```bash
+Bu örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
 
-asnyc function() {
-    const axios = require('axios') //axios kurmak için cmd penceresine npm install axios yazmanız yeterlidir 
+Kodunuzu çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
+
+1. API anahtarınızı `apiKey` değişkenine ekleyin.
+2. İstek atılacak API URL'sini `apiUrl` değişkenine belirtin.
+3. Kodu çalıştırın ve API'den verileri çekin.
+
+Kod, başarılı bir şekilde verileri alıp konsola yazdıracaktır.
+
+```javascript
+const axios = require('axios');
+
+async function fetchData() {
+    const apiKey = 'test'; // API anahtarınızı buraya ekleyin
+    const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
     
-    const apiKey = 'test' // API anahtarınızı buraya ekleyin
-    const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}` //İstek atılacak API URL'sini belirtin
-    // Axios ile GET isteği gönderme
-    const getData = await axios.get(apiUrl, {
-        headers: {
-            'x-api-key': apiKey,
-        },
-    }).catch((error) => { console.error('Hata:', error)})
-    
-    
-    console.log("Istek Başarılı!",getData.data)
-    
-    const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n")
-    
-    console.log(OtherName)
+    try {
+        const response = await axios.get(apiUrl, {
+            headers: {
+                'x-api-key': apiKey,
+            },
+        });
+        
+        console.log("İstek Başarılı!", response.data);
+
+        const otherNames = response.data["User"]["Isimler"].map((x) => x).join("\n");
+        console.log(otherNames);
+    } catch (error) {
+        console.error('Hata:', error);
+    }
 }
+
+fetchData();
 ```
 
 ## Discord Kullanıcısının Api Ile Çekilen Bilgileri ( Örnek )
