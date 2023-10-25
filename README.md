@@ -60,8 +60,13 @@ const OtherName = getData.data["User"]["Isimler"].map((x) => x).join("\n");
 console.log(OtherName)
 ```
 
+## Discord Kullanıcısının Api Ile Çekilen Bilgileri ( Örnek )
+
+- 1. Resim
+
 ![Screenshot_1](https://github.com/mysteriouss3/Mys-Api/assets/142053394/76141f14-6fe8-4b7b-a91a-7103d3cbac30)
 
+- 2. Resim
 
 ![Screenshot_2](https://github.com/mysteriouss3/Mys-Api/assets/142053394/19ba8a34-515b-41ab-a8e6-26f1c579e90a)
 
