@@ -25,14 +25,17 @@ API'ye erişim için yetkilendirme gerekmemektedir (Api-Key).
 - `GET /namaz/{sehir}/{ilce}` - Namaz Vakitleri
 - `GET /nsfw` - NSFW İçerik
 
-## Dökümantasyon
-
-- `http://77.90.131.131:10000/api-docs/` - Api Dökümantasyonu
-
-
 ## Api Key ( Anahtar )
 
 - `test` - Api Anahtarınızdır
+
+## Dökümantasyon
+
+API'yi daha fazla anlamak ve kullanmak için API dökümantasyonuna başvurabilirsiniz. İşte API'nin dökümantasyonunu incelemek için bir bağlantı:
+
+- [API Dökümantasyonu](http://77.90.131.131:10000/api-docs/)
+
+Bu dökümantasyon, API'nin kullanılabilir end point'lerini, istek yapma yöntemlerini, dönen verileri ve diğer önemli bilgileri içerir. API dökümantasyonunu inceleyerek API'nin işlevselliği hakkında daha fazla bilgi edinebilirsiniz. Başlamadan önce API sağlayıcısının belirttiği kılavuzları ve gereksinimleri dikkatlice okumanız önemlidir.
 
 ## Veri Çekme Örneği
 
@@ -72,7 +75,7 @@ async function fetchData() {
 fetchData();
 ```
 
-## Discord Kullanıcısının Api Ile Çekilen Bilgileri ( Örnek )
+## Discord Kullanıcısının API Ile Çekilen Bilgileri ( Örnek )
 
 -  1 . Resim
 
