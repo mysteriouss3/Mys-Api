@@ -34,10 +34,6 @@ API'ye erişim için yetkilendirme gerekmemektedir (Api-Key).
 
 - `test` - Api Anahtarınızdır
 
-## Kullanım
-
-API'yi kullanmak için ilgili endpoint'e HTTP GET isteği göndermelisiniz. Örnekler:
-
 ## Veri Çekme Örneği
 
 Bu örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
