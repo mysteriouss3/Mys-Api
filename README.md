@@ -33,7 +33,7 @@ API'ye erişim için yetkilendirme gerekmemektedir (Api-Key).
 
 API'yi daha fazla anlamak ve kullanmak için API dökümantasyonuna başvurabilirsiniz. İşte API'nin dökümantasyonunu incelemek için bir bağlantı:
 
-- [API Dökümantasyonu](http://77.90.131.131:10000/api-docs/)
+- [API Dökümantasyonu](http://89.150.148.119:10000/api-docs/)
 
 Bu dökümantasyon, API'nin kullanılabilir end point'lerini, istek yapma yöntemlerini, dönen verileri ve diğer önemli bilgileri içerir. API dökümantasyonunu inceleyerek API'nin işlevselliği hakkında daha fazla bilgi edinebilirsiniz. Başlamadan önce API sağlayıcısının belirttiği kılavuzları ve gereksinimleri dikkatlice okumanız önemlidir.
 
@@ -54,7 +54,7 @@ const axios = require('axios');
 
 async function fetchData() {
     const apiKey = 'test'; // API anahtarınızı buraya ekleyin
-    const apiUrl = `http://77.90.131.131:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
+    const apiUrl = `http://89.150.148.119:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
     
     try {
         const response = await axios.get(apiUrl, {
