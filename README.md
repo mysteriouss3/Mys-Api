@@ -26,7 +26,7 @@ Mys API, kullanıcılara farklı bilgilere erişim sağlayan bir API'dir. API, �
 API'yi daha fazla anlamak ve kullanmak için API dökümantasyonuna başvurabilirsiniz. İşte API'nin dökümantasyonunu incelemek için bir bağlantı:
 
 - [API Dökümantasyonu](http://89.150.148.119:10000/api-docs/)
-- http://89.150.148.119:10000/user/discorduserid ile discord kullanıcı sorgulaması yapabilirsiniz.
+- http://89.150.148.119:10000/user/discord user id ile discord kullanıcı sorgulaması yapabilirsiniz.
 
 Bu dökümantasyon, API'nin kullanılabilir end point'lerini, istek yapma yöntemlerini, dönen verileri ve diğer önemli bilgileri içerir. API dökümantasyonunu inceleyerek API'nin işlevselliği hakkında daha fazla bilgi edinebilirsiniz. Başlamadan önce API sağlayıcısının belirttiği kılavuzları ve gereksinimleri dikkatlice okumanız önemlidir.
 
