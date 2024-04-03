@@ -1,3 +1,11 @@
+<div align="center">
+  <br />
+  <p>
+    <a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>
+  </p>
+</div>
+
+
 # Mys API - API Belgesi
 
 Mys API, kullanıcılara farklı bilgilere erişim sağlayan bir API'dir. API, çeşitli endpunktler aracılığıyla veriler sunar. Bu belge, Mys API'nin kullanımı ve özellikleri hakkında bilgi içermektedir.
