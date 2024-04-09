@@ -5,56 +5,42 @@
   </p>
 </div>
 
+# Mys API
 
-# Mys API - API Belgesi
+Mys API, kullanıcılara çeşitli bilgilere erişim sağlayan bir API'dir. API, farklı endpointler aracılığıyla veriler sunar ve çeşitli hizmetler sağlar.
 
-Mys API, kullanıcılara farklı bilgilere erişim sağlayan bir API'dir. API, çeşitli endpunktler aracılığıyla veriler sunar. Bu belge, Mys API'nin kullanımı ve özellikleri hakkında bilgi içermektedir.
+## API Hakkında
 
-## API Sürümü
+- Mys API, kullanıcıların günlük hayatlarında ihtiyaç duydukları çeşitli bilgilere erişim sağlar. Hava durumu, burç bilgisi, döviz kuru, namaz vakitleri gibi çeşitli hizmetler sunar.
+- Mys API'nin en önemli özelliği ise discord kullanıcılarını stalklamak.
 
-- **Sürüm**: 1.0.0
-- **OpenAPI Standartı**: 3.0
+## Kullanım
 
-## Endpointler
+API'yi kullanmak için çeşitli endpointler bulunmaktadır. İşte bazı örnek endpointler:
 
-- `GET /` - Ana Sayfa
-- `GET /user/{id}` - Kullanıcı Bilgisi
-- `GET /burc/{isim}` - Burç Bilgisi
-- `GET /gunlukburc/{isim}` - Günlük Burç Bilgisi
-- `GET /haftalikburc/{isim}` - Haftalık Burç Bilgisi
-- `GET /aylikburc/{isim}` - Aylık Burç Bilgisi
-- `GET /weather/{isim}/` - Hava Durumu Bilgisi
-- `GET /iltifat` - İltifat
-- `GET /doviz` - Döviz Kuru Bilgisi
-- `GET /namaz/{sehir}/{ilce}` - Namaz Vakitleri
-- `GET /nsfw` - NSFW İçerik
+- `/user/{id}` - Kullanıcı Bilgisi
+- `/burc/{isim}` - Burç Bilgisi
+- `/gunlukburc/{isim}` - Günlük Burç Bilgisi
+- `/haftalikburc/{isim}` - Haftalık Burç Bilgisi
+- `/aylikburc/{isim}` - Aylık Burç Bilgisi
+- `/weather/{isim}/` - Hava Durumu Bilgisi
+- `/iltifat` - İltifat
+- `/doviz` - Döviz Kuru Bilgisi
+- `/namaz/{sehir}/{ilce}` - Namaz Vakitleri
+- `/nsfw` - NSFW İçerik
 
-## Dökümantasyon
-
-API'yi daha fazla anlamak ve kullanmak için API dökümantasyonuna başvurabilirsiniz. İşte API'nin dökümantasyonunu incelemek için bir bağlantı:
-
-- [API Dökümantasyonu](http://89.150.148.119:10000/api-docs/)
-- http://89.150.148.119:10000/user/discord user id ile discord kullanıcı sorgulaması yapabilirsiniz.
-
-Bu dökümantasyon, API'nin kullanılabilir end point'lerini, istek yapma yöntemlerini, dönen verileri ve diğer önemli bilgileri içerir. API dökümantasyonunu inceleyerek API'nin işlevselliği hakkında daha fazla bilgi edinebilirsiniz. Başlamadan önce API sağlayıcısının belirttiği kılavuzları ve gereksinimleri dikkatlice okumanız önemlidir.
+Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](http://89.150.148.119:10000/api-docs/) sayfasını ziyaret edebilirsiniz.
 
 ## Veri Çekme Örneği
 
-Bu örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
-
-Kodunuzu çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
-
-2. İstek atılacak API URL'sini `apiUrl` değişkenine belirtin.
-3. Kodu çalıştırın ve API'den verileri çekin.
-
-Kod, başarılı bir şekilde verileri alıp konsola yazdıracaktır.
+Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
 
 ```javascript
 const axios = require('axios');
 
 async function fetchData() {
     const apiKey = 'test'; // API anahtarınızı buraya ekleyin
-    const apiUrl = `http://89.150.148.119:10000/user/${interaction.user.id}`; // İstek atılacak API URL'sini belirtin
+    const apiUrl = `http://89.150.148.119:10000/user/{id}`; // İstek atılacak API URL'sini belirtin
     
     try {
         const response = await axios.get(apiUrl);
@@ -71,13 +57,12 @@ async function fetchData() {
 fetchData();
 ```
 
-## Discord Kullanıcısının API Ile Çekilen Bilgileri ( Örnek )
+## Örnek Ekran Görüntüleri
 
--  1 . Resim
+![Örnek Ekran Görüntüsü 1](https://github.com/mysteriouss3/Mys-Api/assets/142053394/76141f14-6fe8-4b7b-a91a-7103d3cbac30)
 
-![Screenshot_1](https://github.com/mysteriouss3/Mys-Api/assets/142053394/76141f14-6fe8-4b7b-a91a-7103d3cbac30)
+![Örnek Ekran Görüntüsü 2](https://github.com/mysteriouss3/Mys-Api/assets/142053394/19ba8a34-515b-41ab-a8e6-26f1c579e90a)
 
--  2 . Resim
+## Lisans
 
-![Screenshot_2](https://github.com/mysteriouss3/Mys-Api/assets/142053394/19ba8a34-515b-41ab-a8e6-26f1c579e90a)
-
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
