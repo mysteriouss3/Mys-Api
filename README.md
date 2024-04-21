@@ -40,7 +40,7 @@ const axios = require('axios');
 
 async function fetchData() {
     const apiKey = 'test'; // API anahtarınızı buraya ekleyin
-    const apiUrl = `http://89.150.148.119:10000/user/{id}`; // İstek atılacak API URL'sini belirtin
+    const apiUrl = `https://discordpanel.vercel.app/api/user/{id}`; // İstek atılacak API URL'sini belirtin
     
     try {
         const response = await axios.get(apiUrl);
