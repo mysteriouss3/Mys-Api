@@ -27,9 +27,9 @@ API'yi kullanmak için çeşitli endpointler bulunmaktadır. İşte bazı örnek
 - `/iltifat` - İltifat
 - `/doviz` - Döviz Kuru Bilgisi
 - `/namaz/{sehir}/{ilce}` - Namaz Vakitleri
-- `/nsfw` - NSFW İçerik
+- `/nsfw` - NSFW İçerik //
 
-Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](http://89.150.148.119:10000/api-docs/) sayfasını ziyaret edebilirsiniz.
+Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://discordpanel.vercel.app/document/) sayfasını ziyaret edebilirsiniz.
 
 ## Veri Çekme Örneği
 
