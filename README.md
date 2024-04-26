@@ -31,12 +31,12 @@ API'yi kullanmak için çeşitli endpointler bulunmaktadır. İşte bazı örnek
 
 Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://discordpanel.vercel.app/document/) sayfasını ziyaret edebilirsiniz.
 
-## Veri Çekme Örneği
-
 ## Npm Paketiyle Veri Çekmek Icin
 - https://www.npmjs.com/package/mys-api.js
 
-## Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
+## Veri Çekme Örneği
+
+Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
 
 ```javascript
 const axios = require('axios');
