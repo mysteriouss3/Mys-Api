@@ -33,7 +33,10 @@ Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://di
 
 ## Veri Çekme Örneği
 
-Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
+## Npm Paketiyle Veri Çekmek Icin
+- https://www.npmjs.com/package/mys-api.js
+
+## Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullanılabilir. API anahtarınızı ve API URL'sini kod içinde belirtmelisiniz.
 
 ```javascript
 const axios = require('axios');
